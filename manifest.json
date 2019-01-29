@@ -1,0 +1,21 @@
+{
+  "name": "YoutubePlaybackSpeedster",
+  "version": "1.0",
+  "description": "Speed up youtube playback!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": "resources/icon.png"
+  },
+  "icons": {
+    "16": "resources/icon.png",
+    "32": "resources/icon.png",
+    "48": "resources/icon.png",
+    "128": "resources/icon.png"
+  },
+  "manifest_version": 2
+}

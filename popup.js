@@ -10,7 +10,7 @@ query();
 playbackSpeed.onchange = () => query();
 window.onmousewheel = event => {
   // workaround till faulty mouse is replaced
-  if (!event.altKey) {
+  if (event.deltaY < 0) {
     increaseSpeed();
   } else {
     decreaseSpeed();
